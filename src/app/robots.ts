@@ -1,1 +1,1 @@
-import type { MetadataRoute } from "next";export default function robots():MetadataRoute.Robots{return {rules:{userAgent:'*',allow:'/'},sitemap:'https://barufaldi.com.ar/sitemap.xml'};}
+import type { MetadataRoute } from "next";export default function robots():MetadataRoute.Robots{return {rules:{userAgent:'*',allow:'/webBarufaldi/'},sitemap:'https://tomas1aws.github.io/webBarufaldi/sitemap.xml'};}

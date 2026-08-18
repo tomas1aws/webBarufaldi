@@ -1,1 +1,1 @@
-import type { MetadataRoute } from "next";export default function sitemap():MetadataRoute.Sitemap{return [{url:'https://barufaldi.com.ar',lastModified:new Date(),changeFrequency:'monthly',priority:1}];}
+import type { MetadataRoute } from "next";export default function sitemap():MetadataRoute.Sitemap{return [{url:'https://tomas1aws.github.io/webBarufaldi/',lastModified:new Date(),changeFrequency:'monthly',priority:1}];}
