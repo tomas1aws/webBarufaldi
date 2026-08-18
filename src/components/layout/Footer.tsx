@@ -1,0 +1,3 @@
+import { Container } from "@/components/ui/Container";
+import { contact } from "@/data/contact";
+export function Footer(){return <footer className="footer"><Container><div className="footer__top"><div><a className="wordmark wordmark--footer" href="#inicio"><strong>BARUFALDI</strong><span>ABOGADOS</span></a><p>Asesoramiento jurídico empresarial.</p></div><nav aria-label="Navegación del pie"><a href="#estudio">Estudio</a><a href="#areas">Áreas de práctica</a><a href="#experiencia">Experiencia</a><a href="#contacto">Contacto</a></nav><p>{contact.city}<br/>{contact.country}</p></div><div className="footer__bottom"><span>© {new Date().getFullYear()} Barufaldi Abogados</span><a href="#inicio">Volver arriba ↑</a></div></Container></footer>}
