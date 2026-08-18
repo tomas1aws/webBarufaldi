@@ -1,4 +1,5 @@
 import type { Metadata } from "next";import "./globals.css";
 const siteUrl="https://tomas1aws.github.io/webBarufaldi/";const title="Barufaldi Abogados | Asesoramiento Jurídico Empresarial";const description="Estudio jurídico especializado en asesoramiento empresarial, derecho societario, derecho corporativo y comercial, propiedad industrial y cobranzas.";
-export const metadata:Metadata={metadataBase:new URL(siteUrl),title,description,alternates:{canonical:siteUrl},openGraph:{title,description,url:siteUrl,siteName:'Barufaldi Abogados',locale:'es_AR',type:'website'},robots:{index:true,follow:true},icons:{icon:'/webBarufaldi/favicon.svg'}};
+const basePath=process.env.GITHUB_ACTIONS==="true"?"/webBarufaldi":"";
+export const metadata:Metadata={metadataBase:new URL(siteUrl),title,description,alternates:{canonical:siteUrl},openGraph:{title,description,url:siteUrl,siteName:'Barufaldi Abogados',locale:'es_AR',type:'website'},robots:{index:true,follow:true},icons:{icon:`${basePath}/favicon.svg`}};
 export default function RootLayout({children}:{children:React.ReactNode}){const data={"@context":"https://schema.org","@type":"LegalService",name:"Barufaldi Abogados",url:siteUrl,description,areaServed:"Argentina"};return <html lang="es"><body>{children}<script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(data)}}/></body></html>}
